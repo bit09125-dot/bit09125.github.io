@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+  body {
+    animation: fadeIn 0.6s ease;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Boomey | Digital Services</title>
+
+  <!-- Google Font (Comic Sans alternative with better rendering) -->
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  body {
+    animation: fadeIn 0.6s ease;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+<body>
+
+<!-- FLOATING BACKGROUND -->
+<div class="floating-bg">
+  <span>🌿</span>
+  <span>🏆</span>
+  <span>✨</span>
+  <span>🌿</span>
+  <span>⭐</span>
+</div>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">BOOMEY</div>
+
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="nav-buttons">
+    <input type="search" placeholder="Search" class="search-box">
+    <a href="#join" class="btn-outline">Join</a>
+    <button class="btn-outline" onclick="toggleTheme()">🌓</button>
+
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Smart Digital Solutions</h1>
+  <p>Creative, reliable, and modern digital services for brands and individuals.</p>
+
+  <div class="hero-buttons">
+    <a href="https://wa.me/254724006805" class="btn">WhatsApp</a>
+    <a href="services.html" class="btn-secondary">Explore</a>
+  </div>
+</section>
+
+<!-- SERVICES PREVIEW -->
+<section class="section">
+  <h2>What We Do</h2>
+
+  <div class="card-grid">
+    <div class="card">
+      <h3>Web Creation</h3>
+      <p>Modern, responsive, Instagram-smooth websites.</p>
+    </div>
+
+    <div class="card">
+      <h3>Digital Support</h3>
+      <p>Online help, setup, and troubleshooting.</p>
+    </div>
+
+    <div class="card">
+      <h3>Consulting</h3>
+      <p>Guidance for digital growth and branding.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Boomey. All rights reserved.</p>
+</footer>
+
+</body>
+<!-- LOGIN MODAL -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">×</span>
+    <h2>Welcome Back 👋</h2>
+
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+
+    <button class="btn">Login</button>
+    <p class="modal-text">No account? <a href="#">Join Boomey</a></p>
+  </div>
+</div>
+
+<script>
+  function openModal() {
+    document.getElementById("loginModal").style.display = "flex";
+  }
+  function closeModal() {
+    document.getElementById("loginModal").style.display = "none";
+  }
+</script>
+<script>
+  function toggleTheme() {
+    document.body.classList.toggle("light");
+  }
+</script>
+
+</html>
